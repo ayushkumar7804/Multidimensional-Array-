@@ -1,6 +1,6 @@
 # Multidimensional Array
 
-## Title of the Experiment
+## AIM
 Implementation and Understanding of Multidimensional Arrays
 
 ## Tools Used

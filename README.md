@@ -1,65 +1,89 @@
-# Multidimensional Array
+# Multidimensional Arrays: C++ 2D Array – Matrices
 
 ## AIM
-Implementation and Understanding of Multidimensional Arrays
+To study and implement C++ 2D Array – Matrices
 
 ## Tools Used
-- Programming Language: C/C++ (or any other language as per requirement)
-- IDE/Text Editor: Code::Blocks, Visual Studio Code, or any preferred code editor
-- Compiler: GCC (for C/C++) or respective language compiler
+- C++ programming language
+- Any standard C++ compiler (e.g., GCC, Turbo C++, Visual Studio Code with C++ extension)
+- Command-line terminal or IDE for compiling and running programs
 
 ## Theory
 
-### Topic Overview
-A multidimensional array is a data structure that allows storage of data in a tabular form, i.e., in rows and columns. The most commonly used multidimensional array is the two-dimensional array, which can be visualized as a matrix. Multidimensional arrays are useful in applications where data needs to be represented and accessed in more than one dimension, such as matrices, tables, and grids.
+### Overview
+A multidimensional array in C++ is an array of arrays. The most common type is the 2D array, which can be visualized as a matrix (rows × columns). Matrices are widely used in mathematical computations, graphics, and data processing.
 
-### Algorithm
+## Algorithms
 
-1. **Declaration:**  
-   Define the array with the required number of dimensions.  
-   Example in C: `int arr[3][4];` // 2D array with 3 rows and 4 columns
+### 1. Take matrix input from user and display it
 
-2. **Initialization:**  
-   Assign values to each element of the array.  
-   Example:  
-   ```
-   int arr[2][3] = {
-       {1, 2, 3},
-       {4, 5, 6}
-   };
-   ```
+1. Start.
+2. Input the number of rows (m) and columns (n) of the matrix.
+3. Declare a 2D array of size m × n.
+4. For each row `i` from 0 to m-1, do steps 5–7.
+5. For each column `j` from 0 to n-1, do steps 6–7.
+6. Input the element at position [i][j].
+7. End inner column loop.
+8. End outer row loop.
+9. For each row `i` from 0 to m-1, do steps 10–12.
+10. For each column `j` from 0 to n-1, do step 11.
+11. Display the element at position [i][j] with appropriate formatting.
+12. End inner column loop.
+13. End outer row loop.
+14. End.
 
-3. **Accessing Elements:**  
-   Use nested loops to access and manipulate the elements.  
-   Example:  
-   ```
-   for(int i = 0; i < 2; i++) {
-       for(int j = 0; j < 3; j++) {
-           printf("%d ", arr[i][j]);
-       }
-       printf("\n");
-   }
-   ```
+### 2. Addition of two matrices
 
-4. **Flowchart:**
-   ```
-   Start
-     |
-     |--> Declare multidimensional array
-     |--> Initialize array elements
-     |--> For each row
-     |       For each column
-     |           Access/Process element
-     |       End For
-     |   End For
-     |--> End
-   ```
+1. Start.
+2. Input the number of rows (m) and columns (n).
+3. Declare two 2D arrays, A and B, of size m × n.
+4. Input elements of matrix A.
+5. Input elements of matrix B.
+6. Declare a result matrix C of size m × n.
+7. For each row `i` from 0 to m-1, do steps 8–10.
+8. For each column `j` from 0 to n-1, do step 9.
+9. Set C[i][j] = A[i][j] + B[i][j].
+10. End inner column loop.
+11. End outer row loop.
+12. Display matrix C.
+13. End.
 
-### Applications
-- Storing matrices in mathematical computations
-- Representing tables, board games (like chess), images, etc.
-- Handling complex data structures in scientific and engineering applications
+### 3. Multiplication of two matrices
+
+1. Start.
+2. Input the number of rows and columns for matrix A (m × n).
+3. Input the number of rows and columns for matrix B (p × q).
+4. If n ≠ p, print error (matrices cannot be multiplied) and exit.
+5. Input elements of matrix A.
+6. Input elements of matrix B.
+7. Declare result matrix C of size m × q.
+8. For each row `i` from 0 to m-1, do steps 9–15.
+9. For each column `j` from 0 to q-1, do steps 10–14.
+10. Set C[i][j] = 0.
+11. For each k from 0 to n-1, do step 12.
+12. C[i][j] += A[i][k] × B[k][j].
+13. End innermost loop.
+14. End inner column loop.
+15. End outer row loop.
+16. Display matrix C.
+17. End.
+
+### 4. Diagonal Addition (for a square matrix)
+
+1. Start.
+2. Input the size of the square matrix (n × n).
+3. Declare a 2D array A of size n × n.
+4. Input elements of A.
+5. Initialize sum_main_diag = 0 and sum_sec_diag = 0.
+6. For each i from 0 to n-1, do steps 7–8.
+7. sum_main_diag += A[i][i].
+8. sum_sec_diag += A[i][n-1-i].
+9. End loop.
+10. Display sum_main_diag and sum_sec_diag.
+11. End.
+
+---
 
 ## Conclusion
 
-Multidimensional arrays provide an efficient way to store and manipulate data in multiple dimensions. Understanding their declaration, initialization, and traversal is crucial for applications involving tabular data. By practicing with multidimensional arrays, programmers can develop solutions for complex data-oriented problems efficiently.
+This experiment provides hands-on experience with multidimensional arrays (specifically 2D arrays) in C++. By implementing various operations—input/output, addition, multiplication, and diagonal addition—you gain a strong understanding of matrix manipulation, which is essential for advanced programming, data processing, and mathematical computations.

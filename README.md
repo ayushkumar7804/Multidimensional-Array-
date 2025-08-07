@@ -1,21 +1,16 @@
-# Multidimensional Arrays: C++ 2D Array – Matrices
+# 💻Multidimensional Arrays: C++ 2D Array – Matrices
 
-## AIM
+## 🎯AIM
 To study and implement C++ 2D Array – Matrices
 
-## Tools Used
-- C++ programming language
-- Any standard C++ compiler (e.g., GCC, Turbo C++, Visual Studio Code with C++ extension)
-- Command-line terminal or IDE for compiling and running programs
-
-## Theory
+## 📚Theory
 
 ### Overview
 A multidimensional array in C++ is an array of arrays. The most common type is the 2D array, which can be visualized as a matrix (rows × columns). Matrices are widely used in mathematical computations, graphics, and data processing.
 
-## Algorithms
+## 📋 Algorithms
 
-### 1. Take matrix input from user and display it
+### ✅ Take matrix input from user and display it
 
 1. Start.
 2. Input the number of rows (m) and columns (n) of the matrix.
@@ -32,7 +27,7 @@ A multidimensional array in C++ is an array of arrays. The most common type is t
 13. End outer row loop.
 14. End.
 
-### 2. Addition of two matrices
+### ✅ Addition of two matrices
 
 1. Start.
 2. Input the number of rows (m) and columns (n).
@@ -48,7 +43,7 @@ A multidimensional array in C++ is an array of arrays. The most common type is t
 12. Display matrix C.
 13. End.
 
-### 3. Multiplication of two matrices
+### ✅ Multiplication of two matrices
 
 1. Start.
 2. Input the number of rows and columns for matrix A (m × n).
@@ -68,7 +63,7 @@ A multidimensional array in C++ is an array of arrays. The most common type is t
 16. Display matrix C.
 17. End.
 
-### 4. Diagonal Addition (for a square matrix)
+### ✅ Diagonal Addition (for a square matrix)
 
 1. Start.
 2. Input the size of the square matrix (n × n).
@@ -84,6 +79,6 @@ A multidimensional array in C++ is an array of arrays. The most common type is t
 
 ---
 
-## Conclusion
+## 🧠Conclusion
 
 This experiment provides hands-on experience with multidimensional arrays (specifically 2D arrays) in C++. By implementing various operations—input/output, addition, multiplication, and diagonal addition—you gain a strong understanding of matrix manipulation, which is essential for advanced programming, data processing, and mathematical computations.
